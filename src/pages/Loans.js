@@ -1,152 +1,172 @@
 import React from 'react';
 import CardLoan from '../components/CardLoan';
-import img1 from '../images/tin.jpg'; // Импортируем картинку
+import finmi from '../images/FinMi.png'; // Импортируем картинку
+import fin from '../images/finters.png'; // Импортируем картинку
+import sosed from '../images/sosed.png'; // Импортируем картинку
+import centr from '../images/centr.png'; // Импортируем картинку
+import car from '../images/car.png'; // Импортируем картинку
+import ali from '../images/ali.png'; // Импортируем картинку
+import grand from '../images/grand.png'; // Импортируем картинку
+import asia from '../images/asia.png'; // Импортируем картинку
+import dobro from '../images/dobro.png'; // Импортируем картинку
+import medium from '../images/medium.png'; // Импортируем картинку
+import zaimer from '../images/zaimer.png'; // Импортируем картинку
+import ilma from '../images/ilma.png'; // Импортируем картинку
+import laik from '../images/laik.png'; // Импортируем картинку
+import zanfin from '../images/zanfin.png'; // Импортируем картинку
+import kviki from '../images/kviki.png'; // Импортируем картинку
+import bstro from '../images/bstro.png'; // Импортируем картинку
+import money from '../images/money.png'; // Импортируем картинку
+import abr from '../images/abr.png'; // Импортируем картинку
 
+
+
+<div class="container"></div>
 const Loans = () => {
   const demoData = [
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'FINTERS',
+      image: fin, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 24 недель',
+      sum: 'до 50 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7307&p=10695&erid=2W5zFH4LCZF'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'FinMi',
+      image: finmi, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 70 дней',
+      sum: 'до 50 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7304&p=10695&erid=2W5zFHRjyh3'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
+      bank: 'Привет, сосед!',
+      image: sosed, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 31 дня',
       sum: 'до 30 000 ₽',
-      link: '#'
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7280&p=10695&erid=2W5zFHNcvWu'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
+      bank: 'Центрозайм',
+      image: centr, // Ссылка на картинку
+      rate: '0.01% на первый займ',
       term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      sum: 'до 75 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7269&p=10695&erid=2W5zFGkvqJH'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'CarMoney',
+      image: car, // Ссылка на картинку
+      rate: 'до 75% годовых',
+      term: 'до 84 недель',
+      sum: 'до 1 000 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7234&p=10695&erid=2W5zFHkxvwA'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Алистар',
+      image: ali, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 24 недель',
+      sum: 'до 100 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7233&p=10695&erid=2W5zFJ8ghUV'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'GranatFinance',
+      image: grand, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 360 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7223&p=10695&erid=2W5zFJN4wcM'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Asiacredit',
+      image: asia, // Ссылка на картинку
+      rate: '0.6% в день',
+      term: 'до 12 месяцев',
+      sum: 'до 100 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7213&p=10695&erid=2W5zFHEjvPr'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Доброзайм',
+      image: dobro, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 364 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7178&p=10695&erid=2W5zFHnPQoT'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
+      bank: 'Medium Score',
+      image: medium, // Ссылка на картинку
+      rate: '0.8% в день',
       term: 'до 30 дней',
       sum: 'до 30 000 ₽',
-      link: '#'
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7128&p=10695&erid=2W5zFJDLBdS'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
+      bank: 'Займер',
+      image: zaimer, // Ссылка на картинку
+      rate: '0.8% в день',
       term: 'до 30 дней',
       sum: 'до 30 000 ₽',
-      link: '#'
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7073&p=10695&erid=2W5zFJCB1U4'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'ИЛМА',
+      image: ilma, // Ссылка на картинку
+      rate: '0.12% в день',
+      term: 'до 60 месяцев',
+      sum: 'до 60 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7052&p=10695&erid=2W5zFGH2GQg'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Лайк Мани',
+      image: laik, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 180 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7038&p=10695&erid=2W5zFHHtZeg'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Занимательные Финансы',
+      image: zanfin, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 365 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://my.saleads.pro/s/6wlc8?erid=2VtzqvAAbzM'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Kviki',
+      image: kviki, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 360 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://my.saleads.pro/s/39azf?erid=2Vtzqw5YA8m'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Быстроденьги',
+      image: bstro, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 180 дней',
+      sum: 'до 40 000 ₽',
+      link: 'https://my.saleads.pro/s/lmhes?erid=2VtzqwgYGfX'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'Монеткин',
+      image: money, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 365 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://my.saleads.pro/s/p04x3?erid=2VtzqvWJVs3'
     },
     {
-      bank: 'БыстрыйЗайм',
-      image: img1, // Ссылка на картинку
-      rate: '12%',
-      term: 'до 30 дней',
-      sum: 'до 30 000 ₽',
-      link: '#'
+      bank: 'У Абрамовича',
+      image: abr, // Ссылка на картинку
+      rate: '0.8% в день',
+      term: 'до 365 дней',
+      sum: 'до 100 000 ₽',
+      link: 'https://my.saleads.pro/s/ountl?erid=2Vtzqv8gci1'
     },
     // Добавь еще как минимум до 20 объектов, чтобы заполнить страницу.
     // Используй разные цвета в ссылке placehold.co, чтобы визуально различать их.
@@ -156,7 +176,7 @@ const Loans = () => {
 
 return (
   <div className="page">
-    <h2>Микрозаймы</h2>
+
     <div className="cards-grid">
       {demoData.map((item) => (
         <CardLoan key={item.bank} {...item} /> /* Передаем все данные в компонент */

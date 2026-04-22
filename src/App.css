@@ -13,16 +13,20 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Russo+One&display=swap');
 }
 
 .navbar {
+  max-width: 1550px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: #037215; 
-  color: white;
   padding: var(--space);
   font-size: 20px;
+  margin: 0 auto;
+  border-radius: 0px 0px 80px 80px;
+  background-color: #4caf50;
+  margin-bottom: 100px;
 }
 
 .navbar__logo-title {
@@ -39,9 +43,15 @@ body {
 
 
 .navbar__h1 {
+  font-family: "Roboto Slab", serif;
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
+  margin-left: 20px;
+  background-color: #4caf50;
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px;
+  color: #fff;
 }
 
 
@@ -63,13 +73,74 @@ body {
 }
 
 .nav-links a {
-  color: white;
-  margin-left: var(--space);
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+ 
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: rgb(209, 209, 184);
+}
+
+.container {
+  max-width: 1500px;
+  margin:  0 auto;
+}
+
+.header__block-content {
+  display: flex;
+  align-items: center;
+}
+
+.header__block-content img {
+  width: 700px;
+}
+
+
+
+.header__h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 84px;
+  margin-top: -180px;
+}
+.header__h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 84px;
+  margin-top: -20px;
+}
+
+.calculator__block {
+  width: 100%;
+  height: 300px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  margin-top: -50px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.App {
+  padding-top: 30px;
+}
+
+.btn__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App__btn {
+  font-family: "Roboto Slab", serif;
+  width: 350px;
+  height: 60px;
+  margin-top: 40px;
+  color:#000;
+  font-size: 25px;
+  border-radius: 10px;
+  border:none;
+  cursor: pointer;
 }
 
 .page {
@@ -81,8 +152,11 @@ body {
 }
 
 .cards-grid {
+  max-width: 1400px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
   gap: var(--space);
 }
 
@@ -138,7 +212,7 @@ body {
  }
 
 /* Адаптивность для меню */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
    .navbar .nav-links a {
        margin-left: 20px;
    }
@@ -173,7 +247,7 @@ body {
 .burger .line {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: #000;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
@@ -204,7 +278,7 @@ body {
     display: flex; /* Показываем бургер на моб. устройствах */
     position: absolute;
     right: var(--space);
-    top: calc(var(--space) / 2 + 5px);
+    top: calc(var(--space) / 2 + 35px);
     z-index: 10;
   }
 
@@ -257,13 +331,12 @@ body {
 /* Блок для изображения */
 .card-image {
   width: 100%;
-  height: 160px; /* Фиксированная высота для всех картинок */
   overflow: hidden;
 }
 
 .card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover; /* Картинка будет заполнять блок, обрезаясь по краям */
 }
 
@@ -292,3 +365,8 @@ body {
     padding-bottom: calc(var(--space) / 2);
     margin-top: 25px;
 }
+
+
+
+
+

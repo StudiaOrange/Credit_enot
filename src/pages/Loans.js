@@ -3,7 +3,6 @@ import CardLoan from '../components/CardLoan';
 import finmi from '../images/FinMi.png'; // Импортируем картинку
 import fin from '../images/finters.png'; // Импортируем картинку
 import sosed from '../images/sosed.png'; // Импортируем картинку
-import centr from '../images/centr.png'; // Импортируем картинку
 import car from '../images/car.png'; // Импортируем картинку
 import ali from '../images/ali.png'; // Импортируем картинку
 import grand from '../images/grand.png'; // Импортируем картинку

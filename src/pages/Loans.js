@@ -49,14 +49,6 @@ const Loans = () => {
       link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7280&p=10695&erid=2W5zFHNcvWu'
     },
     {
-      bank: 'Центрозайм',
-      image: centr, // Ссылка на картинку
-      rate: '0.01% на первый займ',
-      term: 'до 30 дней',
-      sum: 'до 75 000 ₽',
-      link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7269&p=10695&erid=2W5zFGkvqJH'
-    },
-    {
       bank: 'CarMoney',
       image: car, // Ссылка на картинку
       rate: 'до 75% годовых',
@@ -129,7 +121,7 @@ const Loans = () => {
       link: 'https://fin-lg.com/aff_c?aff_id=145356&offer_id=7038&p=10695&erid=2W5zFHHtZeg'
     },
     {
-      bank: 'Занимательные Финансы',
+      bank: 'Финансы',
       image: zanfin, // Ссылка на картинку
       rate: '0.8% в день',
       term: 'до 365 дней',

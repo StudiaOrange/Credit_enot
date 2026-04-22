@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/loans" onClick={() => setIsMenuOpen(false)}>Займы</Link>
         <Link to="/cards" onClick={() => setIsMenuOpen(false)}>Дебетовые карты</Link>
         <Link to="/consumer-loans" onClick={() => setIsMenuOpen(false)}>Потребительские кредиты</Link>
-        <Link to="/auto-loans" onClick={() => setIsMenuOpen(false)}>Автокредиты</Link>
+        <Link to="/auto-loans" onClick={() => setIsMenuOpen(false)}>Кредитные карты</Link>
         <Link to="/collateral-loans" onClick={() => setIsMenuOpen(false)}>Кредиты под залог</Link>
       </div>
     </nav>

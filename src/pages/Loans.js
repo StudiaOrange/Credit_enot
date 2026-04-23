@@ -20,7 +20,6 @@ import abr from '../images/abr.png'; // Импортируем картинку
 
 
 
-<div class="container"></div>
 const Loans = () => {
   const demoData = [
     {

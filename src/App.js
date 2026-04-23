@@ -6,6 +6,7 @@ import Cards from './pages/Cards';
 import ConsumerLoans from './pages/ConsumerLoans';
 import AutoLoans from './pages/AutoLoans';
 import CollateralLoans from './pages/CollateralLoans';
+import Job from './pages/Job';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/consumer-loans" element={<ConsumerLoans />} />
         <Route path="/auto-loans" element={<AutoLoans />} />
         <Route path="/collateral-loans" element={<CollateralLoans />} />
+        <Route path="/Job" element={<Job />} />
       </Routes>
     </BrowserRouter>
   );

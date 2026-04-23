@@ -1,13 +1,13 @@
 .calculator-container {
   max-width: 1400px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 40px 40px 50px; 
   display: flex;
   flex-direction: column;
   gap: 25px;
   background: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
 }
 
 .input-group {
@@ -62,3 +62,20 @@
 .results p {
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .calculator-container {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .calculator-container {
+        margin-top: 20px;
+      }
+}
+
+
+
+
+  

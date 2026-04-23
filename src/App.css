@@ -56,15 +56,20 @@ body {
 
 
 .logo {
-  display: flex; /* Используем флекс для выравнивания */
-  align-items: center; /* Вертикальное выравнивание по центру */
-  height: 100%; /* Занимает всю высоту навигации */
+  display: flex;
+  /* Используем флекс для выравнивания */
+  align-items: center;
+  /* Вертикальное выравнивание по центру */
+  height: 100%;
+  /* Занимает всю высоту навигации */
 }
 
 /* Стили для самого изображения */
 .logo-img {
-  height: 80px; /* Установи желаемую высоту */
-  width: auto; /* Сохраняем пропорции (ширина подбирается автоматически) */
+  height: 80px;
+  /* Установи желаемую высоту */
+  width: auto;
+  /* Сохраняем пропорции (ширина подбирается автоматически) */
 }
 
 /* Если нужно, чтобы при наведении менялся курсор */
@@ -75,7 +80,7 @@ body {
 .nav-links a {
   font-family: "Roboto Slab", serif;
   color: #fff;
- 
+
   text-decoration: none;
   font-weight: bold;
 }
@@ -86,7 +91,7 @@ body {
 
 .container {
   max-width: 1500px;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
 .header__block-content {
@@ -105,6 +110,7 @@ body {
   font-size: 84px;
   margin-top: -180px;
 }
+
 .header__h2 {
   font-family: "Roboto Slab", serif;
   font-size: 84px;
@@ -113,12 +119,17 @@ body {
 
 .calculator__block {
   width: 100%;
-  height: 300px;
-  background-color: #e5e5e5;
-  border-radius: 20px;
-  margin-top: -50px;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: -80px;
   position: relative;
   margin-bottom: 200px;
+}
+
+.calculator-container {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(3, 172, 8, 0.35);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(3, 172, 8, 0.35);
+  box-shadow: 0px 5px 10px 2px rgba(3, 172, 8, 0.35);
 }
 
 .App {
@@ -136,10 +147,10 @@ body {
   width: 350px;
   height: 60px;
   margin-top: 40px;
-  color:#000;
+  color: #000;
   font-size: 25px;
   border-radius: 10px;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 
@@ -167,24 +178,25 @@ body {
 }
 
 .card-header h3 {
-    margin-top: var(--space);
+  margin-top: var(--space);
 }
 
 .card p {
-    margin-bottom: var(--space) / 2;
+  margin-bottom: var(--space) / 2;
 }
 
 .btn-apply {
-    display: block;
-    width: calc(100% - var(--space)*2);
-    padding-top: calc(var(--space) / 2);
-    padding-bottom: calc(var(--space) / 2);
-    background-color: #4caf50; /* Зеленый */
-    color: white !important;
-    text-align: center;
-    border-radius: var(--radius);
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  width: calc(100% - var(--space)*2);
+  padding-top: calc(var(--space) / 2);
+  padding-bottom: calc(var(--space) / 2);
+  background-color: #4caf50;
+  /* Зеленый */
+  color: white !important;
+  text-align: center;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .btn-apply:focus,
@@ -201,33 +213,64 @@ body {
 .btn-apply.focus-within,
 .btn-apply.focus-visible,
 .btn-apply.focus {
-     outline-color:#fff !important; 
-     outline-style:none !important; 
-     outline-width:none !important; 
-     box-shadow:none !important; 
-     border:none !important; 
-     background-color:#4caf50 !important; 
-     color:#fff !important; 
- }
+  outline-color: #fff !important;
+  outline-style: none !important;
+  outline-width: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #4caf50 !important;
+  color: #fff !important;
+}
+
+@media (max-width:1440px) {
+  .header__h1 {
+    font-size: 74px;
+  }
+
+  .header__h2 {
+    font-size: 74px;
+  }
+}
+
+
+@media (max-width:1024px) {
+  .header__block-content img {
+    width: 350px;
+  }
+
+  .header__h1 {
+    font-size: 65px;
+  }
+
+  .header__h2 {
+    font-size: 65px;
+  }
+
+  .navbar {
+    font-size: 11px;
+  }
+}
 
 /* Адаптивность для меню */
 @media (max-width: 900px) {
-   .navbar .nav-links a {
-       margin-left: 20px;
-   }
-   .navbar .logo {
-       margin-bottom: -8px;
-   }
-   .navbar {
-       flex-direction: column;
-       align-items: flex-start;
-       gap: -8px;
-       padding-left: calc(var(--space) * -1);
-   }
+  .navbar .nav-links a {
+    margin-left: 20px;
+  }
 
-   .header__block-content-right {
-    display: none;
-   }
+  .navbar .logo {
+    margin-bottom: -8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: -8px;
+    padding-left: calc(var(--space) * -1);
+  }
+
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -235,16 +278,27 @@ body {
     font-size: 40px;
     margin-top: 10px;
   }
+
   .header__h1 {
     font-size: 40px;
     margin-top: -40px;
   }
+
   .App {
     margin-top: 80px;
   }
-    .results {
+
+  .results {
     display: flex;
     flex-direction: column;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  .header__block-content img {
+    display: none;
   }
 }
 
@@ -261,6 +315,16 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .calculator__block {
+    background-color: #fff;
+  }
+
+  .App__btn {
+    width: 280px;
+    font-size: 18px;
+  }
+
 }
 
 
@@ -271,7 +335,8 @@ body {
 
 /* Стили для самой кнопки бургера */
 .burger {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
+  /* Скрыто по умолчанию */
   flex-direction: column;
   cursor: pointer;
   justify-content: space-around;
@@ -289,19 +354,22 @@ body {
 }
 
 /* Анимация линий бургера при открытии меню */
-.nav-links.open + .burger .line:nth-child(1) {
+.nav-links.open+.burger .line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-.nav-links.open + .burger .line:nth-child(2) {
+
+.nav-links.open+.burger .line:nth-child(2) {
   opacity: 0;
 }
-.nav-links.open + .burger .line:nth-child(3) {
+
+.nav-links.open+.burger .line:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Стили для списка ссылок */
 .nav-links {
-  display: flex; /* Для десктопа */
+  display: flex;
+  /* Для десктопа */
 }
 
 .nav-links a {
@@ -311,27 +379,34 @@ body {
 /* Медиа-запрос для экранов до 600px */
 @media (max-width: 920px) {
   .burger {
-    display: flex; /* Показываем бургер на моб. устройствах */
+    display: flex;
+    /* Показываем бургер на моб. устройствах */
     position: absolute;
     right: var(--space);
     top: calc(var(--space) / 2 + 35px);
     z-index: 10;
   }
 
+
+
   .nav-links {
 
-    top: calc(100% + var(--space)); /* Располагаем меню под шапкой */
+    top: calc(100% + var(--space));
+    /* Располагаем меню под шапкой */
     right: var(--space);
     left: var(--space);
     border-radius: var(--radius);
     padding: var(--space);
 
-    display: none; /* Скрываем список */
+    display: none;
+    /* Скрываем список */
     flex-direction: column;
-    gap: var(--space); /* Отступы между ссылками */
+    gap: var(--space);
+    /* Отступы между ссылками */
     z-index: 5;
     transform-origin: top right;
-    transform: scaleY(0); /* Скрываем с помощью масштаба */
+    transform: scaleY(0);
+    /* Скрываем с помощью масштаба */
     transition: transform 0.3s ease-in-out;
     margin: 0 auto;
     margin-top: 40px;
@@ -344,9 +419,11 @@ body {
   }
 
   .nav-links a {
-    margin-left: 0; /* Убираем отступ для вертикального списка */
+    margin-left: 0;
+    /* Убираем отступ для вертикального списка */
     text-align: center;
-    width: calc(100% - var(--space)*2); /* Ширина ссылки на всю ширину меню */
+    width: calc(100% - var(--space)*2);
+    /* Ширина ссылки на всю ширину меню */
     padding-bottom: calc(var(--space) / 2);
     border-bottom: none;
     font-size: inherit;
@@ -359,9 +436,11 @@ body {
   border-radius: var(--radius);
   background-color: #fff;
   box-shadow: var(--box-shadow);
-  overflow: hidden; /* Важно, чтобы изображение не выходило за границы */
+  overflow: hidden;
+  /* Важно, чтобы изображение не выходило за границы */
   display: flex;
-  flex-direction: column; /* Для правильного расположения контента */
+  flex-direction: column;
+  /* Для правильного расположения контента */
 }
 
 /* Блок для изображения */
@@ -373,7 +452,8 @@ body {
 .card-image img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Картинка будет заполнять блок, обрезаясь по краям */
+  object-fit: cover;
+  /* Картинка будет заполнять блок, обрезаясь по краям */
 }
 
 /* Блок для текста и кнопки */
@@ -381,28 +461,25 @@ body {
   padding: var(--space);
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Растягивает блок, чтобы кнопка была внизу */
+  flex-grow: 1;
+  /* Растягивает блок, чтобы кнопка была внизу */
 }
 
 .card h3 {
-    margin-top: var(--space);
-    margin-bottom: var(--space) / 2;
+  margin-top: var(--space);
+  margin-bottom: var(--space) / 2;
 }
 
 .card p {
-    margin-bottom: var(--space) / 2;
-    color: #333;
+  margin-bottom: var(--space) / 2;
+  color: #333;
 }
 
 /* Кнопка теперь прилипает к низу карточки */
 .btn-apply {
-    margin-top: auto; /* Это ключевое изменение */
-    padding-top: calc(var(--space) / 2);
-    padding-bottom: calc(var(--space) / 2);
-    margin-top: 25px;
+  margin-top: auto;
+  /* Это ключевое изменение */
+  padding-top: calc(var(--space) / 2);
+  padding-bottom: calc(var(--space) / 2);
+  margin-top: 25px;
 }
-
-
-
-
-

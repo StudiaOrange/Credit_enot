@@ -26,7 +26,7 @@ const Home = () => {
             </div>
             <div class="btn__btn">
               <Link to="/Loans">
-              <button class="App__btn">Оставить заявку на Займ</button>
+              <button class="App__btn">Оставить заявку на займ</button>
               </Link>
             </div>
             

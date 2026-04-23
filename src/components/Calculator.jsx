@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Calculator.css';
 
 const Calculator = () => {
-  const [sum, setSum] = useState(10000);
-  const [days, setDays] = useState(30);
+  const [sum, setSum] = useState(100);
+  const [days, setDays] = useState(1);
   const rate = 0.008; // 0.8% в день
 
   const interest = sum * rate * days;
@@ -16,7 +16,7 @@ const Calculator = () => {
         <input
           type="range"
           min="1000"
-          max="100000"
+          max="1000000"
           step="100"
           value={sum}
           onChange={(e) => setSum(Number(e.target.value))}
